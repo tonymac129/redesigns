@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(37, 37, 37);
+}
+
+.nav {
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 50px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: white !important;
+  text-decoration: none;
+  user-select: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo img {
+  height: 33px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  padding-block: 15px;
+  padding-inline: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+.search {
+  width: 13%;
+  background-color: black;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.side {
+  width: 20%;
+}
+
+.side ul {
+  background-color: rgb(37, 37, 37);
+  padding-inline: 20px;
+  list-style-type: none;
+}
+
+.side h2 {
+  text-align: center;
+  color: white;
+  padding-block: 30px;
+}
+
+.side li {
+  color: white;
+  font-size: 16px;
+  padding-block: 10px;
+  border-top: 1px solid gray;
+}
+
+.side a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.date {
+  display: block;
+  font-size: 13px;
+  padding-top: 5px;
+  color: rgb(201, 201, 201);
+}
+
+.main {
+  width: 60%;
+  background-color: rgb(65, 65, 65);
+}
+
+.main h1 {
+  font-size: 35px;
+  padding-top: 30px;
+  color: white;
+  padding-inline: 35px;
+}
+
+.courses {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.course {
+  width: 170px;
+  height: 160px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  margin: 3px;
+  font-size: 18px;
+  padding-inline: 10px;
+  padding-block: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.course:hover {
+  transform: scale(1.05);
+}
