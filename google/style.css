@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.whole {
+  border-radius: 25px;
+  border: 1px solid white;
+  transition: box-shadow 0.2s ease;
+}
+
+.wrap {
+  background-color: rgb(30, 30, 30);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  width: 100%;
+  padding-top: 60px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.apps {
+  width: 700px;
+  background-color: transparent;
+  border-top: none;
+  padding-block: 5px;
+  overflow: auto;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.none img {
+  width: 50% !important;
+}
+
+.logo {
+  width: 300px;
+  padding-bottom: 30px;
+}
+
+.search-input {
+  width: 700px;
+  padding-block: 13px;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.app {
+  background-color: rgb(50, 50, 50);
+  border-radius: 10px;
+  margin-inline: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-block: 5px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.app:hover img {
+  transform: scale(1.13);
+}
+
+.app img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.input::placeholder {
+  color: rgb(206, 206, 206);
+  font-style: italic;
+}
+
+.input {
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  color: white;
+  outline: none;
+  width: 800px;
+}
+
+.s-icon {
+  cursor: pointer;
+  height: 20px;
+  padding-inline: 20px;
+}
+
+.s-icon:last-child {
+  padding-left: 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  padding-block: 1vh;
+  justify-content: space-around;
+}
+
+.link {
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.link:hover {
+  color: rgb(240, 240, 240);
+}
+
+.trending {
+  width: 95%;
+  margin-inline: 2.5%;
+  list-style-type: none;
+}
+
+.trending li {
+  padding-block: 8px;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-inline: 15px;
+  color: white;
+}
+
+.s {
+  background-color: transparent;
+  border: none;
+}
+
+.trending li:hover {
+  background-color: rgb(57, 57, 57);
+}
+
+#v, #i {
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+.none {
+  display: none;
+}
+

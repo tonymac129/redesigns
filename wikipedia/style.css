@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  display: flex;
+  border-bottom: 0.05vh solid rgb(205, 205, 205);
+  align-items: center;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  padding-block: 10px;
+  background-color: white;
+  z-index: 10000;
+}
+
+.nav-link {
+  margin-inline: 5px;
+  padding-inline: 10px;
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+  padding-block: 12px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.nav-link:hover .menu {
+  display: block;
+}
+
+.links {
+  position: absolute;
+  right: 20px;
+  display: flex;
+}
+
+.links div {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo {
+  margin-left: 50px;
+  position: absolute;
+  left: 20px;
+}
+
+.search {
+  width: 50%;
+  padding-inline: 30px;
+  border-radius: 30px;
+  padding-block: 12px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  align-self: center;
+  background-color: rgb(230, 230, 230);
+}
+
+.search::placeholder {
+  font-style: italic;
+  color: rgb(80, 80, 80);
+}
+
+.menu {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(186, 186, 186);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40px;
+  border-radius: 10px;
+  display: none;
+}
+
+.pages {
+  padding-block: 20px;
+  padding-inline: 15px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.pages:first-child {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.pages:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+
+.pages:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding-block: 30px;
+  
+  border-bottom: 0.05vh solid rgb(205, 205, 205);
+}
+
+.header h1 {
+  padding-bottom: 30px;
+  font-size: 38px;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+.titles {
+  text-align: center;
+  font-size: 30px;
+  padding-block: 30px;
+}
+
+.featured {
+  width: 85%;
+  margin-inline: 7.5%;
+  display: flex;
+  padding-block: 20px;
+  justify-content: center;
+}
+
+.article {
+  width: 32%;
+  margin-right: 1%;
+  padding-block: 20px;
+  padding-inline: 30px;
+  border-radius: 15px;
+  margin-block: 0;
+}
+
+.article:last-of-type {
+  margin-right: 0;
+}
+
+.article h2 {
+  padding-bottom: 20px;
+}
+
+.a-title {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.a-title:hover {
+  text-decoration: underline;
+}
